@@ -135332,34 +135332,29 @@ if(s.gU().length===0)return A.ap(A.e("No details found.",r,r,r,r,r,r,r,r),r,r)
 return A.mG(new A.b7n(this.a,b,this.b,this.c),s.gU().length,r,B.z,!1)},
 $S:3}
 A.b7n.prototype={
-$2(a3,a4){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=null,e="id",d="[DEFAULT]",c=g.b.b.gU()[a4],b=c.b,a=c.a,a0=A.x(b.q(0,"name"),a),a1=A.x(b.q(0,"price"),a),a2=A.x(b.q(0,"location"),a)
-A.x(b.q(0,"days"),a)
-s=A.x(b.q(0,"imageurl"),a)
-r=A.x(b.q(0,e),a)
-q=$.f
-p=(q==null?$.f=$.C():q).B(d)
-q=$.Z()
-A.v(p,q,!0)
-o=A.bs(new A.B(p)).gbo()
-n=A.z(20)
-m=A.E(f,f,B.f,f,f,new A.a4(B.x,A.ix(B.c4,new A.hp(A.c(s),1,f),f),f,A.z(10),f,f,B.n),f,130,f,f,f,f,f)
+$2(a3,a4){var s,r,q,p,o,n,m,l,k=this,j=null,i="id",h="[DEFAULT]",g=k.b.b.gU()[a4],f=g.b,e=g.a,d=A.x(f.q(0,"name"),e),c=A.x(f.q(0,"price"),e),b=A.x(f.q(0,"location"),e),a=A.x(f.q(0,"imageurl"),e),a0=A.x(f.q(0,i),e),a1=$.f,a2=(a1==null?$.f=$.C():a1).B(h)
+a1=$.Z()
+A.v(a2,a1,!0)
+s=A.bs(new A.B(a2)).gbo()
+r=A.z(20)
+q=A.E(j,j,B.f,j,j,new A.a4(B.x,A.ix(B.c4,new A.hp(A.c(a),1,j),j),j,A.z(10),j,j,B.n),j,130,j,j,j,j,j)
+p=$.f
+a2=(p==null?$.f=$.C():p).B(h)
+A.v(a2,a1,!0)
+p=A.Q(new A.B(a2))
+p=A.b3(j,A.bk(new A.b7i(k.a,k.c,a0,k.d),A.I(p,p.gF().I("wishlistsafaris")).a6(0,"email",s.a.c.a.b).a6(0,i,a0).aY(),t.l),j,j,j,10,1,j)
+o=A.z(60)
+o=A.b3(10,A.E(j,new A.l(B.a7,A.aw(j,new A.oB(A.x(f.q(0,i),e),j),B.l,!1,j,j,j,j,j,j,j,j,j,j,j,j,j,new A.b7j(a3,g),j,j,j,j,j,j),j),B.f,j,j,new A.a4(B.h,j,j,o,j,j,B.n),j,j,j,j,j,j,j),j,j,j,10,j,j)
+n=A.z(60)
+m=A.at(B.be,B.aW,j,12)
 l=$.f
-p=(l==null?$.f=$.C():l).B(d)
-A.v(p,q,!0)
-l=A.Q(new A.B(p))
-l=A.b3(f,A.bk(new A.b7i(g.a,g.c,r,g.d),A.I(l,l.gF().I("wishlistsafaris")).a6(0,"email",o.a.c.a.b).a6(0,e,r).aY(),t.l),f,f,f,10,1,f)
-k=A.z(60)
-k=A.b3(10,A.E(f,new A.l(B.a7,A.aw(f,new A.oB(A.x(b.q(0,e),a),f),B.l,!1,f,f,f,f,f,f,f,f,f,f,f,f,f,new A.b7j(a3,c),f,f,f,f,f,f),f),B.f,f,f,new A.a4(B.h,f,f,k,f,f,B.n),f,f,f,f,f,f,f),f,f,f,10,f,f)
-j=A.z(60)
-i=A.at(B.be,B.aW,f,12)
-h=$.f
-p=(h==null?$.f=$.C():h).B(d)
-A.v(p,q,!0)
-q=A.Q(new A.B(p))
-h=t.p
-j=A.b3(10,A.E(f,new A.l(B.a7,A.a7(A.b([i,A.S(A.bk(new A.b7k(),A.I(q,q.gF().I("tourreviews")).a6(0,"tourid",A.x(b.q(0,e),a)).aY(),t.C),21,f)],h),B.i,B.j,B.e,f),f),B.f,f,f,new A.a4(B.h,f,f,j,f,f,B.n),f,f,f,f,f,f,f),f,f,10,f,f,f)
-a=A.z(60)
-return new A.l(B.bY,A.aw(f,A.E(f,A.ab(A.b([A.E(f,A.c9(B.a2,A.b([m,l,k,j,A.b3(f,A.E(f,new A.l(B.a7,A.a7(A.b([A.e("Ksh "+A.c(a1),f,f,f,f,A.aN().$3$color$fontSize$fontWeight(A.A(a3).fr,12,B.t),f,f,f),A.e("/pax",f,f,f,f,A.aN().$3$color$fontSize$fontWeight(B.az,12,B.t),f,f,f)],h),B.i,B.j,B.e,f),f),B.f,f,f,new A.a4(B.h,f,f,a,f,f,B.n),f,f,f,f,f,f,f),f,f,10,f,10,f)],h),B.p,B.a6,f),B.f,f,f,new A.a4(f,f,f,n,f,f,B.n),f,130,f,f,f,f,f),new A.l(B.b0,A.a7(A.b([A.E(f,A.a7(A.b([A.e(A.c(a0),f,f,f,f,A.aN().$2$color$fontSize(B.u,13),f,f,f)],h),B.i,B.j,B.e,f),B.f,f,f,f,f,f,f,f,f,f,f)],h),B.i,B.H,B.e,f),f),new A.l(B.b0,A.e(A.c(a2),f,B.Z,f,f,A.aN().$3$color$fontSize$fontWeight(A.A(a3).fr,12,B.t),f,f,f),f)],h),B.D,B.j,B.e,f),B.f,f,f,f,f,f,f,f,f,f,f),B.l,!1,f,f,f,f,f,f,f,f,f,f,f,f,f,new A.b7l(a3,c),f,f,f,f,f,f),f)},
+a2=(l==null?$.f=$.C():l).B(h)
+A.v(a2,a1,!0)
+a1=A.Q(new A.B(a2))
+l=t.p
+n=A.b3(10,A.E(j,new A.l(B.a7,A.a7(A.b([m,A.S(A.bk(new A.b7k(),A.I(a1,a1.gF().I("tourreviews")).a6(0,"tourid",A.x(f.q(0,i),e)).aY(),t.C),21,j)],l),B.i,B.j,B.e,j),j),B.f,j,j,new A.a4(B.h,j,j,n,j,j,B.n),j,j,j,j,j,j,j),j,j,10,j,j,j)
+e=A.z(60)
+return new A.l(B.bY,A.aw(j,A.E(j,A.ab(A.b([A.E(j,A.c9(B.a2,A.b([q,p,o,n,A.b3(j,A.E(j,new A.l(B.a7,A.a7(A.b([A.e("Ksh "+A.c(c),j,j,j,j,A.aN().$3$color$fontSize$fontWeight(A.A(a3).fr,12,B.t),j,j,j),A.e("/pax",j,j,j,j,A.aN().$3$color$fontSize$fontWeight(B.az,12,B.t),j,j,j)],l),B.i,B.j,B.e,j),j),B.f,j,j,new A.a4(B.h,j,j,e,j,j,B.n),j,j,j,j,j,j,j),j,j,10,j,10,j)],l),B.p,B.a6,j),B.f,j,j,new A.a4(j,j,j,r,j,j,B.n),j,130,j,j,j,j,j),new A.l(B.b0,A.a7(A.b([A.E(j,A.a7(A.b([A.e(A.c(d),j,j,j,j,A.aN().$2$color$fontSize(B.u,13),j,j,j)],l),B.i,B.j,B.e,j),B.f,j,j,j,j,j,j,j,j,j,j)],l),B.i,B.H,B.e,j),j),new A.l(B.b0,A.e(A.c(b),j,B.Z,j,j,A.aN().$3$color$fontSize$fontWeight(A.A(a3).fr,12,B.t),j,j,j),j)],l),B.D,B.j,B.e,j),B.f,j,j,j,j,j,j,j,j,j,j),B.l,!1,j,j,j,j,j,j,j,j,j,j,j,j,j,new A.b7l(a3,g),j,j,j,j,j,j),j)},
 $S:78}
 A.b7l.prototype={
 $0(){var s=A.aW(new A.b7a(this.b),null,t.z)
@@ -135410,7 +135405,7 @@ if(s.gU().length===0)return A.ap(A.e("No details found.",r,r,r,r,r,r,r,r),r,r)
 return A.ku(r,B.l,new A.l0(A.bKD(A.bi(a,r,t.w).w.a.a),2,2,1),new A.b7m(this.a,b,this.b,this.c),s.gU().length,r,B.z)},
 $S:3}
 A.b7m.prototype={
-$2(a4,a5){var s,r,q,p,o,n,m,l,k=this,j=null,i="id",h="[DEFAULT]",g=k.b.b.gU()[a5],f=g.b,e=g.a,d=A.x(f.q(0,"name"),e),c=A.x(f.q(0,"price"),e),b=A.x(f.q(0,"location"),e),a=A.x(f.q(0,"days"),e),a0=A.x(f.q(0,"imageUrl"),e),a1=A.x(f.q(0,i),e),a2=$.f,a3=(a2==null?$.f=$.C():a2).B(h)
+$2(a4,a5){var s,r,q,p,o,n,m,l,k=this,j=null,i="id",h="[DEFAULT]",g=k.b.b.gU()[a5],f=g.b,e=g.a,d=A.x(f.q(0,"name"),e),c=A.x(f.q(0,"price"),e),b=A.x(f.q(0,"location"),e),a=A.x(f.q(0,"days"),e),a0=A.x(f.q(0,"imageurl"),e),a1=A.x(f.q(0,i),e),a2=$.f,a3=(a2==null?$.f=$.C():a2).B(h)
 a2=$.Z()
 A.v(a3,a2,!0)
 s=A.bs(new A.B(a3)).gbo()
