@@ -32,7 +32,60 @@
   <title>samsafaris</title>
   <link rel="manifest" href="manifest.json">
 </head>
-<body>
-  <script src="flutter_bootstrap.js" async></script>
+  <body>
+
+<div id="loading">
+    <img src="icons/Icon-512.png" width="120">
+    <h2>Sam Safaris</h2>
+    <p>Loading your adventure...</p>
+
+    <div class="loader"></div>
+</div>
+
+<style>
+
+body{
+    margin:0;
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial;
+}
+
+#loading{
+    text-align:center;
+}
+
+.loader{
+    width:45px;
+    height:45px;
+    border:5px solid #ddd;
+    border-top:5px solid #2196F3;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin:auto;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+</style>
+
+<script>
+
+window.addEventListener("flutter-first-frame", function () {
+    document.getElementById("loading").remove();
+});
+
+</script>
+
+<script src="flutter_bootstrap.js" async></script>
+
 </body>
+
 </html>
