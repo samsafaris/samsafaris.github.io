@@ -1,63 +1,38 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sam Safaris</title>
 <style>
-html,body{margin:0;height:100%;font-family:Arial,sans-serif;overflow:hidden}
-body{
-background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.6)),url("assets/safari.webp") center/cover no-repeat fixed;
-display:flex;align-items:center;justify-content:center;color:#fff}
-#loading{width:min(90%,700px);text-align:center;background:rgba(0,0,0,.35);backdrop-filter:blur(10px);padding:30px;border-radius:20px;border:1px solid rgba(255,255,255,.2)}
-h1{font-size:54px;margin:10px 0;color:#ffcc33}
-h2{margin:0;font-weight:300}
-#status{height:28px;margin:18px 0;font-size:20px}
-.bar{height:10px;background:#555;border-radius:20px;overflow:hidden}
-.fill{height:100%;width:10%;background:#ffb300;animation:load 2s infinite}
-@keyframes load{0%{margin-left:-30%;width:30%}100%{margin-left:100%;width:40%}}
-.road{margin-top:30px;height:60px;position:relative;border-top:3px dashed #ddd}
+html,body{margin:0;height:100%;font-family:Segoe UI,Arial;background:linear-gradient(135deg,#0b4ea2,#4aa3ff);overflow:hidden}
+body{display:flex;align-items:center;justify-content:center;color:#fff}
+#loading{width:min(92%,720px);background:rgba(255,255,255,.14);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.25);border-radius:24px;padding:36px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.logo{font-size:72px}.title{font-size:52px;font-weight:800;letter-spacing:2px;color:#fff}.sub{color:#dff1ff}
+#status{margin:20px 0;font-size:22px;font-weight:600;color:#fff}
+.bar{height:12px;background:rgba(255,255,255,.2);border-radius:999px;overflow:hidden}
+.fill{height:100%;width:35%;background:linear-gradient(90deg,#fff,#bde3ff,#fff);animation:move 2s infinite}
+@keyframes move{from{transform:translateX(-120%)}to{transform:translateX(320%)}}
+.road{height:60px;position:relative;margin-top:26px}
 .jeep{position:absolute;font-size:42px;animation:drive 6s linear infinite}
 @keyframes drive{0%{left:-10%}100%{left:100%}}
-.fade{opacity:0;transition:opacity .8s}
-.small{opacity:.85;margin-top:18px}
-</style>
-</head>
-<body>
+.fact{margin-top:18px;color:#eef8ff}
+.fade{opacity:0;transition:.8s}
+</style></head><body>
 <div id="loading">
-<div style="font-size:70px">🦁</div>
-<h1>SAM SAFARIS</h1>
-<h2>Explore East Africa</h2>
-<div id="status">🌍 Preparing your East African adventure...</div>
+<div class="logo">🌍</div>
+    <img src="assets/logo.jpeg" alt="Sam Safaris Logo" class="logo">
+<div class="title">SAM SAFARIS</div>
+<div class="sub">Explore East Africa in Comfort</div>
+<div id="status">💙 Planning your next unforgettable journey...</div>
 <div class="bar"><div class="fill"></div></div>
 <div class="road"><div class="jeep">🚙</div></div>
-<p id="fact" class="small"></p>
-<p class="small">🇰🇪 Kenya • 🇹🇿 Tanzania • 🇺🇬 Uganda • 🇷🇼 Rwanda</p>
+<div id="fact" class="fact"></div>
+<p class="sub">🇰🇪 Kenya • 🇹🇿 Tanzania • 🇺🇬 Uganda • 🇷🇼 Rwanda</p>
 </div>
 <script>
-const msgs=[
-"🦁 Spotting the Big Five...",
-"🐘 Guiding elephants to your screen...",
-"🦒 Crossing the savannah...",
-"🦓 Tracking unforgettable safaris...",
-"🌄 Preparing your East African adventure...",
-"🚙 Almost ready..."
-];
-const facts=[
-"Did you know? Kenya hosts the Great Migration.",
-"Adventure starts with trusted local guides.",
-"Discover national parks, beaches and mountains.",
-"Thank you for choosing Sam Safaris."
-];
+const msgs=["✈️ Finding the best safari routes...","🏝️ Discovering hidden destinations...","🦒 Connecting you with amazing experiences...","📍 Preparing your East African adventure...","💙 Almost ready..."];
+const facts=["Luxury tours across East Africa.","Trusted local guides and unforgettable experiences.","From wildlife safaris to beach holidays.","Adventure starts with Sam Safaris."];
 let i=0,j=0;
-setInterval(()=>{status.textContent=msgs[i++%msgs.length]},1800);
-setInterval(()=>{fact.textContent=facts[j++%facts.length]},3500);
-window.addEventListener("flutter-first-frame",()=>{
- loading.classList.add("fade");
- setTimeout(()=>loading.remove(),800);
-});
+setInterval(()=>status.textContent=msgs[i++%msgs.length],1800);
+setInterval(()=>fact.textContent=facts[j++%facts.length],3000);
+window.addEventListener("flutter-first-frame",()=>{loading.classList.add("fade");setTimeout(()=>loading.remove(),800);});
 </script>
 <script src="flutter_bootstrap.js" async></script>
-</body>
-</html>
+</body></html>
